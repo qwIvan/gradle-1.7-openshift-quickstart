@@ -4,11 +4,11 @@
 # before the build step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
 set -x
-if [ ! -d $OPENSHIFT_DATA_DIR/gradle-1.7 ]
+if [ ! -d $OPENSHIFT_DATA_DIR/gradle-2.3 ]
 then
 	cd $OPENSHIFT_DATA_DIR
 	mkdir gradle
 	wget http://services.gradle.org/distributions/gradle-2.3-bin.zip
-	unzip gradle-1.7-bin.zip
-	rm -f gradle-1.7-bin.zip
+	unzip gradle-2.3-bin.zip
+	rm -f gradle-2.3-bin.zip
 fi

@@ -20,6 +20,8 @@ war{
  destinationDir = file('webapps')
 }
 
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
 tasks.withType(Compile) {
  options.encoding = 'UTF-8'
 }
